@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Análisis y Diseño Estructural para todo tipo de proyectos. Especialistas en resistencia sísmica y de viento. Cotiza tu estructura ahora." />
+    <title>EstructuralPro | Análisis y Diseño Estructural</title>
+
+    <!-- Google Fonts (cargado directamente) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome (íconos vectoriales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <i class="fas fa-cubes"></i>
+                    <span>Estructural<span class="highlight">Pro</span></span>
+                </a>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto" class="btn-nav-cta">Cotizar</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio" style="background-image: url('hero-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">+15 años de experiencia</span>
+                <h1>
+                    Convertimos planos en
+                    <span class="text-gradient">estructuras inquebrantables</span>
+                </h1>
+                <p class="hero-desc">
+                    Desde la casa de tus sueños hasta rascacielos que desafían la gravedad.
+                    Nuestro cálculo estructural es el <strong>escudo</strong> que protege tu inversión y salva vidas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">
+                        <i class="fas fa-arrow-right"></i> Cotiza tu proyecto
+                    </a>
+                    <a href="#servicios" class="btn-secondary">
+                        <i class="fas fa-play-circle"></i> Conoce más
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Mil m² calculados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Fallos estructurales</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="120">0</span>
+                        <span class="stat-label">Proyectos entregados</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-3d-placeholder">
+                    <i class="fas fa-cube"></i>
+                    <i class="fas fa-cube"></i>
+                    <i class="fas fa-cube"></i>
+                    <span>3D + BIM</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.32C58.69,99.2,119.62,86.83,163.3,64.87,205.88,43.44,263.34,67.24,321.39,56.44Z" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Lo que hacemos</span>
+                <h2>Análisis y Diseño Estructural <br />para todo tipo de proyectos</h2>
+                <p>Anticipamos la furia de la naturaleza. Modelamos viento y sismo para que tu estructura <strong>baile con el movimiento</strong> sin colapsar.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3>Proyectos Verticales</h3>
+                    <p>Edificios de oficinas, multifamiliares y rascacielos con análisis de cargas gravitacionales y laterales.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Edificios altos</li>
+                        <li><i class="fas fa-check-circle"></i> Oficinas y corporativos</li>
+                        <li><i class="fas fa-check-circle"></i> Multifamiliares</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Proyectos Horizontales</h3>
+                    <p>Naves industriales, almacenes y centros comerciales con grandes claros y cargas móviles.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Naves industriales</li>
+                        <li><i class="fas fa-check-circle"></i> Almacenes y bodegas</li>
+                        <li><i class="fas fa-check-circle"></i> Centros comerciales</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-water"></i></div>
+                    <h3>Obras Civiles Especiales</h3>
+                    <p>Estructuras con requerimientos únicos como tanques, cisternas y hospitales con normativas estrictas.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Tanques elevados</li>
+                        <li><i class="fas fa-check-circle"></i> Cisternas y cárcamos</li>
+                        <li><i class="fas fa-check-circle"></i> Hospitales y clínicas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Especialidades técnicas -->
+            <div class="services-specialties">
+                <div class="specialty-item">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <h4>Diseño por Viento</h4>
+                        <p>Análisis dinámico y estático según normativa CFE, ASCE 7 y criterios de presiones externas e internas.</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-earth-americas"></i>
+                    <div>
+                        <h4>Diseño por Sismo</h4>
+                        <p>Espectros de diseño, análisis modal espectral y time-history para garantizar ductilidad y disipación de energía.</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-cubes"></i>
+                    <div>
+                        <h4>Modelado BIM 3D</h4>
+                        <p>Visualiza tu estructura antes de construir. Detectamos conflictos en el modelo, no en la obra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROYECTOS / PORTFOLIO ========== -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portafolio</span>
+                <h2>Proyectos que <span class="text-gradient">hablan por sí solos</span></h2>
+                <p>Estructuras diseñadas con precisión y respaldadas por la ingeniería más avanzada.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('proyecto1.jpg'); background-size: cover; background-position: center;">
+    <!-- El ícono se mantiene o lo quitas -->
+</div>
+                    <div class="project-info">
+                        <span class="project-tag">Edificio Alto</span>
+                        <h3>Torre Corporativa</h3>
+                        <p>Análisis sísmico avanzado con aisladores de base en zona de alta sismicidad.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Industrial</span>
+                        <h3>Nave de 5,000 m²</h3>
+                        <p>Estructura metálica con claros de 30m, resistente a vientos de 150 km/h.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Especial</span>
+                        <h3>Hospital General de Zona</h3>
+                        <p>Diseño resiliente con redundancia estructural para operación continua post-sismo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESO ========== -->
+    <section class="process" id="proceso">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Metodología</span>
+                <h2>Nuestro proceso de <span class="text-gradient">ingeniería de precisión</span></h2>
+                <p>Un flujo de trabajo transparente que te mantiene informado en cada etapa.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Recepción y análisis</h3>
+                        <p>Recibimos tus planos arquitectónicos y requerimientos específicos del proyecto.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Modelado 3D y simulación</h3>
+                        <p>Construimos el modelo estructural y aplicamos cargas gravitacionales, viento y sismo.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Diseño y detallado</h3>
+                        <p>Dimensionamos elementos: columnas, vigas, losas, zapatas y conexiones.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Entrega y asesoría</h3>
+                        <p>Planos estructurales, memorias de cálculo y acompañamiento en obra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIOS ========== -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2>Lo que dicen <span class="text-gradient">nuestros clientes</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Su cálculo nos permitió ahorrar un 15% en acero sin perder resistencia. Un equipo excepcional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('testimonio1.jpg'); background-size: cover; background-position: center;">
+    <!-- El ícono se mantiene o lo quitas -->
+</div>
+                        <div>
+                            <span class="author-name">Arq. Carlos Méndez</span>
+                            <span class="author-role">Desarrollador inmobiliario</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Entregaron las memorias de cálculo en tiempo récord. Su modelo BIM nos evitó muchos problemas en obra."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <span class="author-name">Ing. Laura Fernández</span>
+                            <span class="author-role">Constructora Gral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"El análisis sísmico fue impecable. Obtuvimos la licencia sin problemas y la estructura es una garantía."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <span class="author-name">Mtro. Ricardo Soto</span>
+                            <span class="author-role">Propietario de bodega</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO / COTIZACIÓN ========== -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contáctanos</span>
+                    <h2>¿Listo para asegurar <br />tu estructura?</h2>
+                    <p>Construir sin un análisis estructural adecuado es como jugar a la ruleta rusa. <strong>No arriesgues tu patrimonio.</strong></p>
+
+                    <ul class="contact-details">
+                        <li><i class="fas fa-phone"></i> <span>+52 812 406 2292</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>david_rdz87@hotmail.com</span></li>
+                        <li><i class="fas fa-clock"></i> <span>Lun - Vie: 8:00 AM - 6:00 PM</span></li>
+                    </ul>
+
+                    <div class="contact-trust">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Honorarios claros y cotización sin compromiso</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="55 1234 5678" />
+                    </div>
+                    <div class="form-group">
+                        <label for="proyecto">Tipo de proyecto</label>
+                        <select id="proyecto">
+                            <option value="">Selecciona...</option>
+                            <option>Casa habitación</option>
+                            <option>Nave industrial</option>
+                            <option>Almacén / Bodega</option>
+                            <option>Centro comercial</option>
+                            <option>Edificio de oficinas</option>
+                            <option>Edificio multifamiliar</option>
+                            <option>Edificio alto</option>
+                            <option>Tanque elevado</option>
+                            <option>Cisterna</option>
+                            <option>Hospital</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Solicitar cotización
+                    </button>
+                    <p class="form-note">* Te responderemos en menos de 24 horas.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-cubes"></i>
+                        <span>Estructural<span class="highlight">Pro</span></span>
+                    </div>
+                    <p>Ingeniería estructural de precisión. Donde la seguridad y la innovación se encuentran.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li><a href="#servicios">Diseño por Viento</a></li>
+                        <li><a href="#servicios">Diseño por Sismo</a></li>
+                        <li><a href="#servicios">Modelado BIM 3D</a></li>
+                        <li><a href="#servicios">Memorias de Cálculo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Recurso gratuito</h4>
+                    <p>Descarga nuestro checklist: "10 puntos para una estructura sismo-resistente"</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Tu correo" />
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EstructuralPro. Todos los derechos reservados.</p>
+                <p>Diseñado con <i class="fas fa-heart"></i> para la seguridad estructural</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="script.js"></script>
+</body>
+</html>
